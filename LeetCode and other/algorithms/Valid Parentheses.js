@@ -15,7 +15,7 @@ var isValid = function(s) {
     var unclosedIndex = [];
     var flags = {
       closedScobe: false
-    }
+    };
     for (var j = 0; j < s.length; j++) {
       //если разрешена открытая скобка добавляем любую открытую скобку
       if (pattern.indexOf(s[j]) !== -1) {
