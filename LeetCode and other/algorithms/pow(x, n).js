@@ -1,4 +1,4 @@
-
+п»ї
 https://leetcode.com/problems/powx-n/#/description
 
 Implement pow(x, n).
@@ -17,9 +17,9 @@ function pow(x, n) {
 }
 
 function powImprove(x, n) {
-  /*
-    Находим степень четного числа быстрее
-  */
+    /*
+		РќР°С…РѕРґРёРј СЃС‚РµРїРµРЅСЊ С‡РµС‚РЅРѕРіРѕ С‡РёСЃР»Р° Р±С‹СЃС‚СЂРµРµ
+	*/
   if (n <= 1) {
     return x;
   }
