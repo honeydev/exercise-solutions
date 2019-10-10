@@ -7,7 +7,7 @@
 
 (defn sum-combainer [a b]
   (+ a b))
-
+1.33.clj
 (defn product-combainer [a b] (* a b))
 (defn term [a b] (= a b))
 

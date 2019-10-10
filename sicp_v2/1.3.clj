@@ -7,7 +7,7 @@
     (and (> a b) (> c b)) (sum-of-squares a c)
     :else (sum-of-squares b c)))
 
-(deftest test-capitalize-entries
+(deftest test-sum-of-squares
   (is (= (sos-two-big-nums 2, 3, 4) 25.0))
   (is (= (sos-two-big-nums 14 6 3)) 232.0)
   )
