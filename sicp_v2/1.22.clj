@@ -1,4 +1,3 @@
-(defn is-prime [] 'a')
 
 (defn square [n] (* n n))
 
@@ -7,7 +6,7 @@
 
 (defn expmod [base exp m]
     (cond (= exp 0) 1
-            (= even? exp)
+            (even? exp)
                 (rem (square (expmod base (/ exp 2) m)) m)
             :else
                 (rem (* base (expmod base (- exp 1) m)) m)))
@@ -30,6 +29,7 @@
     (filter (fn [n] (and (is-prime? n) (not (even? n)))) (range a (+ b 1))))
 
 (def start (System/currentTimeMillis))
+
 (print start "\n")
 (print (count (search-primes 3 10000)) "\n")
 (print (- (System/currentTimeMillis) start) "\n")
