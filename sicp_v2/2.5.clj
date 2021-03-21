@@ -1,6 +1,5 @@
 (defn find-multiplicity [base-number number]
   (defn iteration [acc counter]
-    ; (print acc counter)
     (if (not= (rem acc base-number) 0)
       counter
       (iteration (/ acc base-number) (inc counter))))
@@ -12,8 +11,7 @@
 (defn car [pair] (find-multiplicity 2 (pair)))
 (defn cdr [pair] (find-multiplicity 3 (pair)))
 
-(def p (make-pair 2 4))
+(def p (make-pair 4 17))
 
-(println (find-multiplicity 2 (p)))
 (println (car p))
 (println (cdr p))
